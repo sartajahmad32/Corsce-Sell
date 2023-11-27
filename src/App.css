@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course {
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .courses {
+    justify-content: center;
+  }
+
+  .course {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .course {
+    padding: 15px;
+  }
+}
